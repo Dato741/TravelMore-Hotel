@@ -1,0 +1,20 @@
+header {
+    height: 800px;
+    width: 100%;
+    background-image: url(https://m.economictimes.com/thumb/msid-89465809,width-1254,height-836,resizemode-4,imgsize-28786/indian-hotels.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.register-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.register-box label {
+    margin-bottom: 5px;
+}

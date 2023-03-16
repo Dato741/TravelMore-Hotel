@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- flatpicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+
+<body>
+
+    <head>
+        <header>
+            <nav class="navbar bg-transparent py-3">
+                <div class="container">
+                    <a class="navbar-brand text-white fw-semibold" href="index.html">
+                        <i class="bi bi-house"></i>
+                        TravelMore
+                    </a>
+                    <div id="">
+                        <div class="dropdown d-inline-block me-3">
+                            <a href="./hotel.html">
+                                <button id="addhotel" class="btn btn-primary rounded-pill px-4">Add Hotel</button>
+                            </a>
+                            <button id="logoutbtn" class="btn btn-danger rounded-pill ms-4">Log out</button>
+                            <button class="btn btn-secondary dropdown-toggle px-4 rounded-pill auth" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Login
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <label for="text">Email</label>
+                                    <input id="logindemail" type="text" class="form-control mx-auto w-75"
+                                        placeholder="Enter email">
+                                </li>
+                                <li class="py-2">
+                                    <label for="password">Password</label>
+                                    <input id="loginpassword" type="password" class="form-control mx-auto w-75"
+                                        placeholder="Enter password">
+                                </li>
+                                <li class="text-center">
+                                    <button id="loginbtn" type="button"
+                                        class="btn btn-primary mx-auto my-2">Login</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="./register.html">
+                            <button type="button" class="btn btn-primary px-4 rounded-pill auth">Register</button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="search bg-white d-inline-block">
+                    <h2 class="fw-bold">Find the perfect hotel</h2>
+                    <p class="fw-light">We search hundreds of accommodations and showcase only the best hotels.</p>
+                    <div class="destination position-relative">
+                        <input class="form-control" type="text" placeholder="Where to?">
+                    </div>
+                    <div class="inputborder">
+                        <div class="checkin d-inline position-relative">
+                            <input class="form-control d-inline-block" type="date" placeholder="add dates">
+                        </div>
+                        <div class="checkout d-inline position-relative">
+                            <input class="form-control d-inline-block" type="date" placeholder="add dates">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </header>
+    </head>
+
+    <!-- suggestions -->
+    <section>
+        <div class="container mt-5">
+            <h2 class="text-center fw-bold">The best hotels from all over georgia, all in one place</h2>
+            <p class="text-center w-75 mx-auto mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur aliquid repudiandae amet, at vitae quis corrupti. Culpa alias quam a cum ut corrupti nostrum
+                facilis.</p>
+        </div>
+    </section>
+
+    <!-- hotel cards -->
+    <section id="h-cards">
+        <div id="hotel-display" class="container d-flex justify-content-start flex-wrap position-relative">
+            <div class="card position-relative ms-4" style="width: 18rem;">
+                <a href="#" class="text-decoration-none text-dark d-inline-block mb-5">
+                    <div class="card-picture">
+                        <img src="https://cdn.mygeotrip.com/file_manager/images/Travel%20Articles/Top%2010%20Luxurious%20Hotels/Ambasadori%20Tbilisi%20Hotel.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Ambassador Tbilisi</h5>
+                        <p class="card-text mb-1">The hotel is located in the historical center of the capital, on the
+                            banks of
+                            the Kur river, near Rustaveli Avenue.</p>
+                        <span class="fw-semibold">200$</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card position-relative ms-4" style="width: 18rem;">
+                <a href="#" class="text-decoration-none text-dark d-inline-block mb-5">
+                    <div class="card-picture">
+                        <img src="https://cdn.mygeotrip.com/file_manager/images/Travel%20Articles/Top%2010%20Luxurious%20Hotels/3/Tbilisi%20Marriott%20Hotel.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Marriott Tbilisi</h5>
+                        <p class="card-text mb-1">The magnificent building is located in the very center of the city, on
+                            Rustaveli Street, next to the church of Kashveti.</p>
+                        <span class="fw-semibold">180$</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card position-relative ms-4" style="width: 18rem;">
+                <a href="#" class="text-decoration-none text-dark d-inline-block mb-5">
+                    <div class="card-picture">
+                        <img src="https://cdn.mygeotrip.com/file_manager/images/Travel%20Articles/Top%2010%20Luxurious%20Hotels/Biltmore%20Hotel%20Tbilisi.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Biltmore Tbilisi</h5>
+                        <p class="card-text mb-1">The hotel is located in the city center, near the Opera and Ballet
+                            Theater. The hotel has 2 restaurants, an outdoor pool and two bars.</p>
+                        <span class="fw-semibold">220$</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card position-relative ms-4" style="width: 18rem;">
+                <a href="#" class="text-decoration-none text-dark d-inline-block mb-5">
+                    <div class="card-picture">
+                        <img src="https://cdn.mygeotrip.com/file_manager/images/Travel%20Articles/Top%2010%20Luxurious%20Hotels/2/Radisson%20Blu%20Iveria%20Hotel.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Radisson Blu Iveria</h5>
+                        <p class="card-text mb-1">Radisson Blu Iveria hotel is located in the center of Tbilisi and
+                            offers a wonderful view of the whole city, the Narikala fortress,.</p>
+                        <span class="fw-semibold">250$</span>
+                    </div>
+                </a>
+            </div>
+            <div id="spinner" class="w-100 d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- short info -->
+    <section id="info">
+        <div class="container d-flex justify-content-around position-relative">
+            <div class="d-grid">
+                <img src="https://img.icons8.com/ios/500/search-in-list.png" alt="">
+                <h5 class="mt-5">Instant search</h5>
+                <p class="w-75 text-center">No wasted time searching and scrolling across different sites</p>
+            </div>
+            <div class="d-grid position-relative bf">
+                <img src="https://cdn-icons-png.flaticon.com/512/18/18200.png" alt="">
+                <h5 class="mt-5">Personalized results</h5>
+                <p class="w-75 text-center">Only the best results so you can easily find the perfect hotel</p>
+            </div>
+            <div class="d-grid">
+                <img src="https://img.freepik.com/premium-vector/simple-village-house-coloring-page-clipart-design_540116-995.jpg?w=740"
+                    alt="">
+                <h5 class="mt-5">Millions of hotels</h5>
+                <p class="w-75 text-center">The best hotels from the world's largest travel sites</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="position-relative">
+        <div class="container d-flex position-relative">
+            <div class="d-inline-block me-5">
+                <a href="">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                </a>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">List Your Rental</a>
+                <a href="">Careers</a>
+                <a href="">Blog</a>
+                <a href="">Press</a>
+            </div>
+            <div class="d-inline-block ms-5 ps-5">
+                <a href="">
+                    <h5 class="fw-bold mb-4">Support</h5>
+                </a>
+                <a href="">Travel Resources</a>
+                <a href="">Contact</a>
+                <a href="">FAQ</a>
+                <a href="">Sitemap</a>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between mt-5 policy">
+            <div>
+                <i class="bi bi-house fw- fs-5"></i>
+                <p class="d-inline-block fw-bold fs-5">Travelmore</p>
+                <p class="d-inline ms-4">© 2023 TravelMore, a Tbilisi Labs company.</p>
+                <a href="">Terms</a>
+                <a href="">Privacy</a>
+            </div>
+            <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./firebase.js"></script>
+    <script src="main.js"></script>
+    <script src="./sharedFunctions.js"></script>
+    <!-- flatpicker -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        config = {
+            altInput: true,
+            altFormat: "j M",
+            dateFormat: "Y-m-d",
+        }
+        flatpickr("input[type=date]", config);
+    </script>
+</body>
+
+</html>

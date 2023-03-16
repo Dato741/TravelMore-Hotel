@@ -1,0 +1,39 @@
+header {
+    height: 800px;
+    width: 100%;
+    background-image: url(https://i0.wp.com/hotel-latour.co.uk/app/app-uploads/2021/11/Hotel-Reception-Area_2500-min.jpg?ssl=1&w=2500&quality=85);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.register-box {
+    background-color: rgb(240, 240, 240);
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.register-box label {
+    margin-bottom: 5px;
+}
+
+
+#hoteldescription {
+    height: 100px;
+}
+
+#hotelprice {
+    width: 50px !important;
+    text-align: center;
+    display: inline-block;
+    flex: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#hotelimage {
+    width: 100px;
+    border-radius: 7px;
+}

@@ -1,0 +1,247 @@
+header {
+    height: 600px;
+    width: 100%;
+    background-image: url(https://sleepexpress.co.uk/pub/media/magefan_blog/2021/07/hotel-like-bedroom-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.navbar button::after {
+    display: none;
+}
+
+#addhotel {
+    display: none;
+}
+
+#logoutbtn {
+    display: none;
+}
+
+.dropdown-menu {
+    transform: translateX(-50%);
+    left: 50% !important;
+    width: 250px;
+    border-radius: 30px;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dropdown-menu input {
+    font-size: 12px;
+}
+
+.dropdown-menu label {
+    display: block !important;
+    width: 75%;
+    margin: auto;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.dropdown-menu button {
+    font-size: 12px;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.search {
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+.search input{
+    width: 49%;
+    padding: 30px 0px 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.checkin::before {
+    content: "Check in";
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.checkout::before {
+    content: "Check out";
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.checkin::after {
+    content: " ";
+    background-color: rgb(194, 194, 194);
+    width: 1px;
+    height: 45px;
+    position: absolute;
+    right: 2px;
+    bottom: 0px;
+}
+
+.inputborder {
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.destination input {
+    border: 1px solid rgb(201, 201, 201);
+    width: 100%;
+}
+
+.destination::before {
+    content: "Destination";
+    position: absolute;
+    left: 15px;
+    bottom: 27px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 53, 144);
+}
+
+.search .btn{
+    background-color: rgb(0, 53, 144);
+    color: white;
+    width: 100%;
+    padding: 12px 0px;
+    --bs-btn-hover-bg: rgb(0, 45, 112);
+}
+
+#h-cards {
+    margin-top: 70px;
+}
+
+.card {
+    border: none !important;
+    width: 250px !important;
+}
+
+.card-body {
+    padding: 15px 0px 0px 0px !important;
+}
+
+.card-body p {
+    font-size: 12px;
+}
+
+.card-picture {
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.card img {
+    height: 150px;
+    transform: scale(1);
+    transition: 1s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+
+#info {
+    margin: 150px 0px;
+}
+
+#info img {
+    width: 100px;
+}
+
+.d-grid {
+    justify-items: center;
+}
+
+#info .container::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.bf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bf::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+footer h5 {
+    font-size: 16px;
+}
+
+footer a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    display: block;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.policy a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social i {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.bi-x-circle-fill {
+    color: red;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}

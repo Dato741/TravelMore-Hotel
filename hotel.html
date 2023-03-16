@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hotel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <head>
+        <header id="hotel-header">
+            <nav class="navbar bg-transparent py-3">
+                <div class="container">
+                    <a class="navbar-brand text-white fw-semibold" href="index.html">
+                        <i class="bi bi-house"></i>
+                        TravelMore
+                    </a>
+            </nav>
+            <div class="register-box">
+                <h4 class="text-center">Add Hotel</h4>
+                <label for="text">Hotel Name</label>
+                <input id="hotelname" type="text" class="form-control mb-3" placeholder="enter hotel name">
+                <label for="text">Description</label>
+                <input id="hoteldescription" type="text" class="form-control" placeholder="add description">
+                <div class="input-group mt-3">
+                    <span class="input-group-text">$</span>
+                    <input id="hotelprice" type="text" class="form-control">
+                    <input id="hotelimage" type="file" class="form-control ms-5">
+                </div>
+                <button id="uploadhotelbtn" type="button" class="btn btn-primary w-100 mt-3">Upload</button>
+            </div>
+        </header>
+    </head>
+
+    <footer class="position-relative">
+        <div class="container d-flex position-relative">
+            <div class="d-inline-block me-5">
+                <a href="">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                </a>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">List Your Rental</a>
+                <a href="">Careers</a>
+                <a href="">Blog</a>
+                <a href="">Press</a>
+            </div>
+            <div class="d-inline-block ms-5 ps-5">
+                <a href="">
+                    <h5 class="fw-bold mb-4">Support</h5>
+                </a>
+                <a href="">Travel Resources</a>
+                <a href="">Contact</a>
+                <a href="">FAQ</a>
+                <a href="">Sitemap</a>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between mt-5 policy">
+            <div>
+                <i class="bi bi-house fw- fs-5"></i>
+                <p class="d-inline-block fw-bold fs-5">Travelmore</p>
+                <p class="d-inline ms-4">© 2023 TravelMore, a Tbilisi Labs company.</p>
+                <a href="">Terms</a>
+                <a href="">Privacy</a>
+            </div>
+            <div class="social">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./firebase.js"></script>
+    <script src="./main.js"></script>
+    <script src="./sharedFunctions.js"></script>
+
+</body>
+
+</html>
